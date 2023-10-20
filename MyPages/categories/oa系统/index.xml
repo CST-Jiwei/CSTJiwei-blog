@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>OA系统 on 计算机维护队内部技术博客</title>
+        <link>https://scau-jiwei.gitee.io/categories/oa%E7%B3%BB%E7%BB%9F/</link>
+        <description>Recent content in OA系统 on 计算机维护队内部技术博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Mon, 19 Sep 2022 21:03:50 +0800</lastBuildDate><atom:link href="https://scau-jiwei.gitee.io/categories/oa%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>OA系统通用解决方案</title>
+        <link>https://scau-jiwei.gitee.io/p/oa%E7%B3%BB%E7%BB%9F%E9%80%9A%E7%94%A8%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+        <pubDate>Mon, 19 Sep 2022 21:03:50 +0800</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/p/oa%E7%B3%BB%E7%BB%9F%E9%80%9A%E7%94%A8%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+        <description>&lt;h3 id=&#34;关于oa系统的通用解决方案&#34;&gt;关于OA系统的通用解决方案&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;安装Flash控件。&lt;/li&gt;
+&lt;li&gt;华农OA系统登录页面“辅助程序安装”，点击后按步骤安装好控件。(一般情况下已经安装好了)（需要管理员权限）&lt;/li&gt;
+&lt;li&gt;将浏览器对OA系统网址的浏览模式改为兼容模式（更改内核）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;注：Edge浏览器不适配学校的OA系统。&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在系统内无法查看WPS类文档正文的解决方法：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;浏览器Internet选项&amp;ndash;&amp;gt;安全&amp;ndash;&amp;gt;自定义级别&amp;ndash;&amp;gt;把ActiveX控件有关的选项全部启用。
+浏览器Internet选项&amp;ndash;&amp;gt;安全&amp;ndash;&amp;gt;受信任的站点&amp;ndash;&amp;gt;站点&amp;ndash;&amp;gt;取消勾选“对该区域中所有站点都要求服务器验证”，然后将OA系统的网址添加进受信任网址列表。
+关闭所有浏览器，之后重新打开浏览器进入OA系统。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;注：若前几步失效，重新安装Office。原本安装的是WPS则重装WPS，其他情况建议重装Microsoft Office 2007或2010。&lt;/em&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

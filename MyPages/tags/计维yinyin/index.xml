@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>计维YinYin on 计算机维护队内部技术博客</title>
+        <link>https://scau-jiwei.gitee.io/tags/%E8%AE%A1%E7%BB%B4yinyin/</link>
+        <description>Recent content in 计维YinYin on 计算机维护队内部技术博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 30 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://scau-jiwei.gitee.io/tags/%E8%AE%A1%E7%BB%B4yinyin/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>从零开始的台式机装机教程</title>
+        <link>https://scau-jiwei.gitee.io/p/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%8F%B0%E5%BC%8F%E6%9C%BA%E8%A3%85%E6%9C%BA%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/p/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%9A%84%E5%8F%B0%E5%BC%8F%E6%9C%BA%E8%A3%85%E6%9C%BA%E6%95%99%E7%A8%8B/</guid>
+        <description>&lt;h2 id=&#34;装机准备&#34;&gt;装机准备&lt;/h2&gt;
+&lt;p&gt;沉稳的心态&lt;/p&gt;
+&lt;p&gt;足够大的干净整洁空间，用来有序地放置各种物品&lt;/p&gt;
+&lt;p&gt;机箱、电源、主板、CPU、散热器、显卡、硬盘、内存条、显示器&lt;/p&gt;
+&lt;p&gt;配套螺丝、供电线、显示器连接线等&lt;/p&gt;
+&lt;p&gt;一把好用的十字螺丝刀&lt;/p&gt;
+&lt;h2 id=&#34;装机步骤&#34;&gt;装机步骤&lt;/h2&gt;
+&lt;p&gt;洗手，擦干，释放静电，深呼吸，准备开始！&lt;/p&gt;
+&lt;h3 id=&#34;检查机箱&#34;&gt;检查机箱&lt;/h3&gt;
+&lt;p&gt;检查机箱的类型和大小，观察机箱空间是否足够装下所有电脑器件；优先确认CPU散热器是否高度足够与显卡长度是否足够。&lt;/p&gt;
+&lt;p&gt;观察电源位置，上置电源与下置电源的安装方法有些许不同；&lt;/p&gt;
+&lt;p&gt;安装机箱的I/O面板，装好螺柱。（现在的许多机箱已经预先安装好了）&lt;/p&gt;
+&lt;p&gt;观察可供安装风扇的位置，模拟一下机箱从哪里进风从哪里出风，在后续安装风扇时注意排气朝向，确保空气是往一个方向流通的。&lt;/p&gt;
+&lt;h3 id=&#34;安装电源&#34;&gt;安装电源&lt;/h3&gt;
+&lt;p&gt;打开机箱侧面板。&lt;/p&gt;
+&lt;p&gt;取出电源和设备供电线，将所有供电线（包括CPU供电线、主板供电线、显卡供电线等）依照电源上的图示插好；&lt;/p&gt;
+&lt;p&gt;（以下置电源为例）将电源的风扇面朝上（可以更好地进行自然散热），将电源置入机箱底部的电源槽，使电源供电插口和电源开关位于机箱背面；在机箱背面用螺丝固定好电源。最后将供电线大致理顺以便后续的装机步骤。&lt;/p&gt;
+&lt;h3 id=&#34;取出主板&#34;&gt;取出主板&lt;/h3&gt;
+&lt;p&gt;将主板包装盒打开，取出主板。放置在平面上。（可以取出包装盒内的海绵板放在桌面，再将主板平放在海绵板上。）观察主板自带的螺丝孔能与机箱上哪些螺丝孔对齐。&lt;/p&gt;
+&lt;h3 id=&#34;安装cpu&#34;&gt;安装CPU&lt;/h3&gt;
+&lt;p&gt;CPU（中央处理器）&lt;/p&gt;
+&lt;p&gt;取出CPU，打开主板上的CPU扣具，取下扣具的盖板；将CPU对准方向小心平放入插槽，合上扣具即可。&lt;/p&gt;
+&lt;p&gt;Intel的CPU一般扣具模式为弹簧扣盖，需要先将弹簧销（即扣具一侧的小棒子）向外推出，此时弹簧销会自然弹起，扣具也会松动，接下来就可以打开扣具了；AMD的CPU一般没有扣具，小心将CPU安放至主板的CPU插槽上即可直接涂抹硅脂安装散热器。&lt;/p&gt;
+&lt;h3 id=&#34;安装内存条&#34;&gt;安装内存条&lt;/h3&gt;
+&lt;p&gt;单根内存选2号位，双根内存优先选2号位和4号位；（原理：主板的走线布局类型决定了2号位和4号位的内存性能最好）&lt;/p&gt;
+&lt;p&gt;向下按开内存条插槽两侧的卡扣；注意内存条的防呆缺口（\即内存条插槽中的凸起条，对应内存条金手指处的凹槽）位置，将两头对准插槽，缓慢而稳地将内存条插到槽底，必要时可以左右摇晃以确保能顺利塞入。听到“咔”的一声，两侧卡扣均自动扣上即表明安装完成。&lt;/p&gt;
+&lt;h3 id=&#34;安装散热器&#34;&gt;安装散热器&lt;/h3&gt;
+&lt;p&gt;散热器的安装位置在CPU模块的正上方。&lt;/p&gt;
+&lt;p&gt;将散热器扣具安装在主板反面，在主板正面用螺丝固定；注意LGA1700接口和LGA1200接口的安装区别。&lt;/p&gt;
+&lt;p&gt;取出附带的硅脂（也可以自己购买更适合的），轻轻在CPU模块上面点涂5个点或者画X形。&lt;/p&gt;
+&lt;p&gt;（以塔式散热器为例）撕开散热器底部的胶贴，解开风扇的卡扣，暂时解开风扇放置在一边。将散热器底部对准CPU位置上的散热器扣具，缓慢平放，使CPU上的硅脂被均匀摊开压平；扣上、拧上散热器的卡扣和螺丝，使散热器固定（\务必注意：拧螺丝时若出现拧完一侧另一侧无法拧下时，将已拧下的螺丝复原，然后交叉对拧两侧的螺丝，每次只拧入一小段；最后将风扇安装回原位，扣上风扇卡扣。&lt;/p&gt;
+&lt;h3 id=&#34;安装m2固态硬盘&#34;&gt;安装M.2固态硬盘&lt;/h3&gt;
+&lt;p&gt;若接口处配置有硬盘导热板：用螺丝刀旋开M.2接口上面的导热板的螺丝，将导热板取下放在一边。&lt;/p&gt;
+&lt;p&gt;观察该接口的长度以及螺口的位置：主板针对不同规格长度的固态硬盘设置了多个螺口，根据自己的固态硬盘长度选择螺柱安装位置。选好位置后，将机箱配套的螺柱旋进主板上的螺口。&lt;/p&gt;
+&lt;p&gt;（关于固态硬盘规格：2280指卡式固态硬盘的PCB板的尺寸，表示该固态硬盘宽22mm，长80mm；常见的尺寸还有2260，2242，2230等）&lt;/p&gt;
+&lt;p&gt;观察固态硬盘的金手指缺口位置，确认位置与M.2接口一致之后，从斜上方约30度将硬盘插入接口，金手指全部插入时即为插到底。此时硬盘为倾斜状态，用手轻轻将固态硬盘压至水平，使硬盘尾部的半圆形凹槽恰好对准螺柱螺口；再将螺丝旋进螺口，完成对固态硬盘的固定。最后，若配置有导热板，将导热板压在固态硬盘上，再旋入螺丝固定。&lt;/p&gt;
+&lt;h3 id=&#34;ex安装机械硬盘与sata硬盘&#34;&gt;(EX)安装机械硬盘与SATA硬盘&lt;/h3&gt;
+&lt;p&gt;安装机械硬盘时，需拉出机箱内的机械硬盘槽，打开固定卡扣，将机械硬盘平放安插进硬盘槽内，再锁好卡扣。对于执行SATA协议接口的机械硬盘，我们需要准备一条SATA数据线，将一端连接在主板上，另一端连接至机械硬盘。然后，我们需要找到电源线中的硬盘电源线，将电源线插入机械硬盘中，最后将安装好的机械硬盘推回硬盘槽内。若机械硬盘作为系统盘，需要将该硬盘安装至0号硬盘槽。&lt;/p&gt;
+&lt;p&gt;安装SATA固态硬盘时，我们需要找到机箱的SATA固态硬盘固定位，用螺丝固定SATA硬盘。接下来线材连接的步骤与机械硬盘相同，此处不再赘述。&lt;/p&gt;
+&lt;h3 id=&#34;固定主板&#34;&gt;固定主板&lt;/h3&gt;
+&lt;p&gt;将机箱平放在地面上，打开侧面板。观察机箱的主板螺丝螺口位置，将主板小心地平放入机箱，螺口一一对应，主板左上方的接口板正好对齐机箱背面。使用螺丝固定好主板即可。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;常见的主板一般至少需要5颗螺丝固定：左上角、内存条插槽上侧、接口平板下侧、主板供电接口下侧、PCIEx16插槽上侧；可以先在机箱安装更多的螺柱螺丝进一步固定&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;安装独立显卡&#34;&gt;安装独立显卡&lt;/h3&gt;
+&lt;p&gt;将机箱背面的显卡挡板和扩展槽挡板拆下。（拆卸数量根据显卡的接口平板宽度决定，一般拆卸1~2块即可）&lt;/p&gt;
+&lt;p&gt;根据显卡的PCI-Express规格，打开主板上对应长度的PCI-Express插槽卡扣（常见配置有PCIEx16、PCIEx4）；将显卡金手指对准插槽，注意金手指的防呆缺口方向；垂直向下将显卡插入插槽，插到底之后将卡扣合上。（现在许多主板会自动合上卡扣。插到底后听到“咔”的一声，卡扣自动扣上即可）&lt;/p&gt;
+&lt;p&gt;此时显卡的接口板应与机箱背面对齐。将机箱背部的显卡挡板装回，重新用螺丝锁紧以固定显卡。若显卡较大较重，可以再另外安装显卡支架进一步固定。&lt;/p&gt;
+&lt;h3 id=&#34;插线&#34;&gt;插线&lt;/h3&gt;
+&lt;p&gt;连接供电线是装机的重要步骤。各种器件都需要供电，故需要连接的供电线有很多。接线的安装顺序一般为:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;graph LR
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;主板供电 --&amp;gt; CPU供电 --&amp;gt; CPU散热器供电 --&amp;gt; USB接线 --&amp;gt; 机箱跳线 --&amp;gt; 显卡供电
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;blockquote&gt;
+&lt;p&gt;连接机箱跳线这一步中，务必将各跳线接口明确并准确接入对应接口中&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;机箱跳线&#34;&gt;机箱跳线&lt;/h4&gt;
+&lt;p&gt;F_AUDIO、F_USB2.0、F_USB3.0、FAN、CPU_FAN、POWER_SW、RESET_SW、HDD_LED、POWER_LED+、POWER_LED-&lt;/p&gt;
+&lt;h4 id=&#34;接线简要解释&#34;&gt;接线简要解释&lt;/h4&gt;
+&lt;p&gt;F_AUDIO：音频线&lt;/p&gt;
+&lt;p&gt;F_USB：USB接口线&lt;/p&gt;
+&lt;p&gt;POWER_SW、RESET_SW、HDD_LED、POWER_LED：启动、重启、硬盘指示灯、启动指示灯&lt;/p&gt;
+&lt;p&gt;FAN：若机箱配置有机箱风扇，则风扇供电接在该接口处。&lt;/p&gt;
+&lt;p&gt;CPU_FAN：CPU散热器风扇供电，常见为4针脚，位于主板平面上方。&lt;/p&gt;
+&lt;p&gt;CPU供电：常见为6+8pin，位于主板左上角。&lt;/p&gt;
+&lt;p&gt;主板供电：常见为24pin，位于主板右侧。&lt;/p&gt;
+&lt;p&gt;显卡辅助供电：目前常见的显卡都需要另接辅助供电，根据型号有不同的供电方案，常见有8pin、6+8pin、8+8pin等。&lt;/p&gt;
+&lt;h3 id=&#34;理线检查开机&#34;&gt;理线、检查、开机&lt;/h3&gt;
+&lt;p&gt;理线也是装机的一项重要步骤，整洁的电线整理既可以令机箱内部拥有喜人的观感（尤其是各种酷炫的机箱），更重要的是腾出机箱空间利于散热，也利于设备的检修和管理。&lt;/p&gt;
+&lt;h4 id=&#34;理线技巧&#34;&gt;理线技巧&lt;/h4&gt;
+&lt;p&gt;多使用理线带；将处在相近位置的连接线放在同一个口；将没有用到的连接线捆好放在主板后侧的机箱空间中。&lt;/p&gt;
+&lt;h4 id=&#34;开机检查步骤&#34;&gt;开机检查步骤&lt;/h4&gt;
+&lt;p&gt;确认所有的电脑设备都已经正确地安装完成；&lt;/p&gt;
+&lt;p&gt;确认所有的供电线、机箱跳线都已经在正确的位置上插好，理线整洁；&lt;/p&gt;
+&lt;p&gt;将显示器连接线插在独立显卡的接口上；&lt;/p&gt;
+&lt;p&gt;连接键盘和鼠标；&lt;/p&gt;
+&lt;p&gt;将机箱电源线接好，打开机箱电源开关；&lt;/p&gt;
+&lt;p&gt;按下机箱正面的启动开关，开机。&lt;/p&gt;
+&lt;h4 id=&#34;排障操作&#34;&gt;排障操作&lt;/h4&gt;
+&lt;p&gt;只保留足够系统开机自检的基本设备，CPU（包括风扇）、内存、主板是最基本的构成。&lt;/p&gt;
+&lt;p&gt;Intel平台可以只保留以上基本设备，AMD平台由于往往没有安装核心显卡，需要保留独立显卡。&lt;/p&gt;
+&lt;p&gt;电脑故障排障顺序：&lt;/p&gt;
+&lt;p&gt;CPU&amp;ndash;&amp;gt;内存&amp;ndash;&amp;gt;PCI-Express设备&amp;ndash;&amp;gt;输入输出设备&amp;ndash;&amp;gt;其他设备&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;无法启动的原因以及解决方法简要列举&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;表现（无报警声）&lt;/th&gt;
+&lt;th&gt;故障来源&lt;/th&gt;
+&lt;th&gt;解决方法建议&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;电源输出电压不足&lt;/td&gt;
+&lt;td&gt;电源&lt;/td&gt;
+&lt;td&gt;检查供电情况，必要时更换功率更高的电源&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;主板供电模块问题，常见表现为风扇转一下就停&lt;/td&gt;
+&lt;td&gt;主板&lt;/td&gt;
+&lt;td&gt;联系售后人员咨询；更换主板&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;处理器和内存频率设置问题，常见表现为风扇转一下就停&lt;/td&gt;
+&lt;td&gt;CPU、内存&lt;/td&gt;
+&lt;td&gt;常见是由于超频导致，将频率进行修正即可（如重置CMOS）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;风扇时转时停&lt;/td&gt;
+&lt;td&gt;电源、内存&lt;/td&gt;
+&lt;td&gt;关机断电，拔掉电源线，重新安装内存条，长按开机键保持十几秒，再重新接电开机&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;处理器故障，表现为其他设备均正常运转但无法开机&lt;/td&gt;
+&lt;td&gt;CPU、CPU散热器风扇&lt;/td&gt;
+&lt;td&gt;检查散热器风扇供电是否接线正确；检查CPU安装情况；必要时更换CPU、散热器风扇&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;主机已启动，但显示器屏幕电源灯闪烁，无信号输入&lt;/td&gt;
+&lt;td&gt;显卡、内存&lt;/td&gt;
+&lt;td&gt;关机断电，擦拭显卡、内存条的金手指，清理上面的灰尘，重新安装显卡、内存条&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;表现（有报警声）&lt;/th&gt;
+&lt;th&gt;故障来源&lt;/th&gt;
+&lt;th&gt;解决方法建议&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;mdash;-&lt;/td&gt;
+&lt;td&gt;内存&lt;/td&gt;
+&lt;td&gt;关机断电，拔出内存，擦拭金手指；重新安装内存条；必要时更换内存条&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;mdash;-&lt;/td&gt;
+&lt;td&gt;具体情况具体分析&lt;/td&gt;
+&lt;td&gt;上网查阅对应主板的报警提示指南，对症下药进行处理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;故障自检灯亮&lt;/td&gt;
+&lt;td&gt;具体情况具体分析&lt;/td&gt;
+&lt;td&gt;上网查阅对应主板的报警提示指南，对症下药进行处理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;其他&lt;/td&gt;
+&lt;td&gt;具体情况具体分析&lt;/td&gt;
+&lt;td&gt;使用Debug卡排障&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;注意事项&#34;&gt;注意事项&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在机箱内安装主板时必定是不通电的，所以为了防止静电击穿主板上的电容，在安装主板以及在主板上安装内存条、显卡等设备时，应该事先释放静电，以及最好全程佩戴静电手环。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;若散热器较大，应该先安装内存条和固态硬盘，以免散热器安装后挡住内存条和固态硬盘的插槽导致无法进行后续安装。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在将主板放置进机箱，用螺丝固定主板时，主板左上角的螺丝往往由于空间狭小而难以就位，在安装时较困难。&lt;/p&gt;
+&lt;p&gt;解决方案1：使用长杆螺丝刀。&lt;/p&gt;
+&lt;p&gt;解决方案2（不太建议）：可以考虑先固定主板再安装散热器。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;主板上的针脚脆弱易损坏，在插入排线时要小心，一时插不进不要使用蛮力。HDD-LED、POWER-SW、RESET-SW等跳线，针脚小、细且排布密集，HDD-LED跳线还有正负极之分，进行连接时应小心注意辨别。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;部分6pin、8pin及以上的供电接口有可拆分设计，在插线时注意根据实际情况进行合并和对齐。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;祝各位有愉快的装机体验！&lt;/strong&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

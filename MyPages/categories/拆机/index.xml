@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>拆机 on 计算机维护队内部技术博客</title>
+        <link>https://scau-jiwei.gitee.io/categories/%E6%8B%86%E6%9C%BA/</link>
+        <description>Recent content in 拆机 on 计算机维护队内部技术博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Tue, 25 Oct 2022 20:39:01 +0800</lastBuildDate><atom:link href="https://scau-jiwei.gitee.io/categories/%E6%8B%86%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>计维计划通——拆机图文教程</title>
+        <link>https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Tue, 25 Oct 2022 20:39:01 +0800</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/</guid>
+        <description>&lt;h1 id=&#34;椰香后援会&#34;&gt;椰香后援会&lt;/h1&gt;
+&lt;h5 id=&#34;应援计划通&#34;&gt;——应援计划通&lt;/h5&gt;
+&lt;h2 id=&#34;一硬件维修相关需拆机&#34;&gt;一、硬件维修相关（需拆机）&lt;/h2&gt;
+&lt;h3 id=&#34;零开始任务之前&#34;&gt;（零）开始任务之前&lt;/h3&gt;
+&lt;p&gt;要谨记，在开始任何修机任务之前，都必须确保机主已报修并签署协议。&lt;/p&gt;
+&lt;p&gt;要注意，签署协议还要提醒机主抄写方框上的那一句话。&lt;/p&gt;
+&lt;h3 id=&#34;一拆机步骤&#34;&gt;（一）拆机步骤&lt;/h3&gt;
+&lt;h4 id=&#34;1获取计算机中加密卷信息&#34;&gt;1.获取计算机中加密卷信息&lt;/h4&gt;
+&lt;h4 id=&#34;1winr唤出运行命令框&#34;&gt;（1）“win+r”唤出运行命令框&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/001.png&#34;
+	width=&#34;399&#34;
+	height=&#34;230&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/001_hu89aff1718c12f2c2a155a81fc4538d87_10411_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/001_hu89aff1718c12f2c2a155a81fc4538d87_10411_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;001&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;173&#34;
+		data-flex-basis=&#34;416px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2输入manage-bde--status查询被bitlocker加密的卷&#34;&gt;（2）输入“manage-bde -status”查询被bitlocker加密的卷&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/002.png&#34;
+	width=&#34;554&#34;
+	height=&#34;290&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/002_hu62ff84df95702d5bd29a7b9885079c15_14595_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/002_hu62ff84df95702d5bd29a7b9885079c15_14595_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;002&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;191&#34;
+		data-flex-basis=&#34;458px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;若无Bitlocker信息（和图中一样），则跳转至步骤2：查询该型号笔记本的硬件信息&lt;/p&gt;
+&lt;h4 id=&#34;3获取密钥防止数据被锁&#34;&gt;（3）获取密钥，防止数据被锁&lt;/h4&gt;
+&lt;p&gt;以管理员权限运行“获取恢复密钥.bat”，等待脚本运行完毕
+&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/003.png&#34;
+	width=&#34;1005&#34;
+	height=&#34;664&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/003_huf3ec040e71349def15b6a24c0083ffa4_75729_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/003_huf3ec040e71349def15b6a24c0083ffa4_75729_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;003&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;151&#34;
+		data-flex-basis=&#34;363px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;程序会在C盘生成一个叫做OutPutKey的文件夹&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/004.png&#34;
+	width=&#34;1005&#34;
+	height=&#34;664&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/004_hu1bd640477b37d05c670a788c5aa478c1_76644_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/004_hu1bd640477b37d05c670a788c5aa478c1_76644_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;004&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;151&#34;
+		data-flex-basis=&#34;363px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;将此文件夹复制到一个U盘之后就可以放心地开始做任务了。&lt;/p&gt;
+&lt;h4 id=&#34;2查询该型号笔记本的硬件信息&#34;&gt;2.查询该型号笔记本的硬件信息&lt;/h4&gt;
+&lt;p&gt;通过网络搜索，查询该机型的相关硬件信息，如：&lt;strong&gt;螺丝位置、螺丝数量、螺丝长度、是否具有防滑螺丝、后盖拆卸与装配的要点、主板上各零部件位置&lt;/strong&gt;等&lt;/p&gt;
+&lt;h4 id=&#34;3拆除d面背板&#34;&gt;3.拆除D面背板&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;在关机情况下进行，正式拆机前应洗手（除静电）&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;1移除供电线网线外设防尘塞同理&#34;&gt;（1）移除供电线、网线、外设，防尘塞同理&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/005.jpg&#34;
+	width=&#34;1024&#34;
+	height=&#34;768&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/005_hucba6ca1019d15cdcca1252974d7b87ee_214489_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/005_hucba6ca1019d15cdcca1252974d7b87ee_214489_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;005&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2卸下螺丝&#34;&gt;（2）卸下螺丝&lt;/h4&gt;
+&lt;p&gt;将笔记本翻至D面（后盖）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/006.jpg&#34;
+	width=&#34;1024&#34;
+	height=&#34;768&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/006_huab5a0d06bffa104046c7ddfeecdad254_296294_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/006_huab5a0d06bffa104046c7ddfeecdad254_296294_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;006&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;使用对应的螺丝批（十字/一字/梅花）拧出螺丝，将螺丝按照在后盖上的位置进行摆放&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/007.jpg&#34;
+	width=&#34;1024&#34;
+	height=&#34;768&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/007_hu4ed20f13b285a3ecd678171961ae71d1_206833_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/007_hu4ed20f13b285a3ecd678171961ae71d1_206833_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;007&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;3撬开后盖&#34;&gt;（3）撬开后盖&lt;/h4&gt;
+&lt;p&gt;使用撬棒、翘片等工具，抵住后盖与机体的缝，将后盖从边角撬开&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/008.jpg&#34;
+	width=&#34;3000&#34;
+	height=&#34;4000&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/008_hu61b8aff330ef21e7d2ce8a153b157c04_2742635_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/008_hu61b8aff330ef21e7d2ce8a153b157c04_2742635_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;008&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/009.jpg&#34;
+	width=&#34;3000&#34;
+	height=&#34;4000&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/009_hu6ab8fc82c135070e5bf34284756ea901_1996539_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/009_hu6ab8fc82c135070e5bf34284756ea901_1996539_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;009&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/010.jpg&#34;
+	width=&#34;1024&#34;
+	height=&#34;768&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/010_hu151b201fb650bfa1c2d78adcf6abf33f_215415_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/010_hu151b201fb650bfa1c2d78adcf6abf33f_215415_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;010&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;翘片卡进去后，可以听到后盖卡扣脱离机体的声音&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;将翘片沿边缘缓慢划过，使用巧劲，确保所有的卡扣脱离&lt;/p&gt;
+&lt;p&gt;有的机型后盖比较复杂，这就需要预先灵活使用网络搜索&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/011.jpg&#34;
+	width=&#34;1024&#34;
+	height=&#34;768&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/011_hu361649d8e8683819450539494d6170c2_296130_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/011_hu361649d8e8683819450539494d6170c2_296130_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;011&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;二认识笔记本主板上的元件&#34;&gt;（二）认识笔记本主板上的元件&lt;/h3&gt;
+&lt;h4 id=&#34;1俯视图&#34;&gt;1.俯视图&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/012.jpg&#34;
+	width=&#34;1024&#34;
+	height=&#34;768&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/012_hu455e9e376a93281ff3cab09f56bce4dd_347833_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/012_hu455e9e376a93281ff3cab09f56bce4dd_347833_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;012&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2解析图&#34;&gt;2.解析图&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/013.jpg&#34;
+	width=&#34;1024&#34;
+	height=&#34;768&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/013_hu9e008ad369828abc2acc3ea743ab9217_222746_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/013_hu9e008ad369828abc2acc3ea743ab9217_222746_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;013&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1.散热模块&lt;br&gt;
+2.CPU、GPU核心&lt;br&gt;
+3.M.2固态硬盘位（2）&lt;br&gt;
+4.内存条（2）&lt;br&gt;
+5.网卡&lt;br&gt;
+6.电池&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;不同的笔记本，主板构造大同小异&lt;/p&gt;
+&lt;h3 id=&#34;以下进行具体案例示范所有操作均在电源排线移除的情况下完成&#34;&gt;&lt;strong&gt;以下进行具体案例示范，所有操作均在电源排线移除的情况下完成&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;电源排线位置&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/014.jpg&#34;
+	width=&#34;1024&#34;
+	height=&#34;768&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/014_hu40291c07c89d9f787dd2f76609122090_256615_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/014_hu40291c07c89d9f787dd2f76609122090_256615_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;014&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;拆除电源排线&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/015.jpg&#34;
+	width=&#34;3000&#34;
+	height=&#34;4000&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/015_hu424a0862c96b6e97c51c091f420b1fdb_3029228_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/015_hu424a0862c96b6e97c51c091f420b1fdb_3029228_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;015&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;释放静电:长按电源键30秒、洗手&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;三加装更换m2固态硬盘&#34;&gt;（三）加装（更换）M.2固态硬盘&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/016.jpg&#34;
+	width=&#34;1080&#34;
+	height=&#34;1440&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/016_hueb0bec22f894d8df981cf007958745da_350404_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/016_hueb0bec22f894d8df981cf007958745da_350404_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;016&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;1取下原有的固定螺丝&#34;&gt;1.取下原有的固定螺丝&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有散热马甲的应先取下&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/017.jpg&#34;
+	width=&#34;3000&#34;
+	height=&#34;4000&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/017_huc1d567798d72ff47d67b84b39f703350_3567746_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/017_huc1d567798d72ff47d67b84b39f703350_3567746_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;017&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2拿m2固态硬盘虚触接口&#34;&gt;2.拿M.2固态硬盘虚触接口&lt;/h4&gt;
+&lt;p&gt;观察防呆设计&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/018.jpg&#34;
+	width=&#34;1024&#34;
+	height=&#34;768&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/018_hu00c9deb313e92cba8610b5e2c9cb7f85_255767_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/018_hu00c9deb313e92cba8610b5e2c9cb7f85_255767_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;018&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不要大力出奇迹！！！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;3放入固态硬盘&#34;&gt;3.放入固态硬盘&lt;/h4&gt;
+&lt;p&gt;先斜着放入，再用磁吸批头吸着螺丝将其压下，并固定&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/019.jpg&#34;
+	width=&#34;1024&#34;
+	height=&#34;768&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/019_huc21159ea93f249908cbcb66b9e03fdad_366284_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/019_huc21159ea93f249908cbcb66b9e03fdad_366284_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;019&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;四清灰&#34;&gt;（四）清灰&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;记得戴口罩&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;1扫去表面灰尘&#34;&gt;1.扫去表面灰尘&lt;/h4&gt;
+&lt;p&gt;用软毛刷刷去风扇附近的灰尘&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/020.jpg&#34;
+	width=&#34;768&#34;
+	height=&#34;1024&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/020_hud229ddc7cd8eec9f5f458da0707af5b7_249926_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/020_hud229ddc7cd8eec9f5f458da0707af5b7_249926_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;020&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;后盖上可能也会有附着的灰尘，记得清理&lt;/p&gt;
+&lt;h4 id=&#34;2深入清理风扇中的灰尘&#34;&gt;2.深入清理风扇中的灰尘&lt;/h4&gt;
+&lt;p&gt;将毛刷插入风扇，使刷子与扇叶充分接触，再用刷子将灰尘挑出&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/021.jpg&#34;
+	width=&#34;4000&#34;
+	height=&#34;3000&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/021_hu889e5fa5c42934a71c163c9eefdb8aa2_2249988_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/021_hu889e5fa5c42934a71c163c9eefdb8aa2_2249988_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;021&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这一步清理出来的灰尘较多，注意收集措施&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;用毛刷清理完之后，再用气吹吹出灰尘&lt;/p&gt;
+&lt;p&gt;使用气吹时，动作要迅速，利用产生的气流将扇叶、散热鳍片上残留的灰尘吹走&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/022.jpg&#34;
+	width=&#34;1024&#34;
+	height=&#34;768&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/022_hu2de11c009c80fc67b63ea6af8adaa5a3_240681_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/022_hu2de11c009c80fc67b63ea6af8adaa5a3_240681_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;022&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;吹至无扬尘出现后，可换至另一边的风扇清理&lt;/p&gt;
+&lt;p&gt;最后，用气吹清理掉落在主板表面的灰尘&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/023.jpg&#34;
+	width=&#34;1024&#34;
+	height=&#34;768&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/023_huf6dbe99c3728aba560078519068de17e_266072_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/023_huf6dbe99c3728aba560078519068de17e_266072_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;023&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;目的：防止灰尘掉落在主板上造成元器件损伤&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;五加装更换内存条&#34;&gt;（五）加装（更换）内存条&lt;/h3&gt;
+&lt;p&gt;内存条所在位置如图，一般有黑色绝缘片&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/028.jpg&#34;
+	width=&#34;1024&#34;
+	height=&#34;768&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/028_hu86ae1e6cd0aa7a93d2b55226411859d2_243991_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/028_hu86ae1e6cd0aa7a93d2b55226411859d2_243991_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;028&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;1拿内存条虚触接口&#34;&gt;1.拿内存条虚触接口&lt;/h4&gt;
+&lt;p&gt;观察防呆设计&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/029.jpg&#34;
+	width=&#34;768&#34;
+	height=&#34;1024&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/029_hu270f875bddbf4fa76c2ee3b993f6f72d_253860_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/029_hu270f875bddbf4fa76c2ee3b993f6f72d_253860_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;029&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2放入内存条&#34;&gt;2.放入内存条&lt;/h4&gt;
+&lt;p&gt;斜放内存条&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/030.jpg&#34;
+	width=&#34;4000&#34;
+	height=&#34;3000&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/030_hu051c6db873dd21af7960f257f460eba0_3319365_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/030_hu051c6db873dd21af7960f257f460eba0_3319365_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;030&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;固定内存条的是两根弹性金属条，配有卡扣&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/031.jpg&#34;
+	width=&#34;1024&#34;
+	height=&#34;768&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/031_hu86ae1e6cd0aa7a93d2b55226411859d2_187640_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/031_hu86ae1e6cd0aa7a93d2b55226411859d2_187640_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;031&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;在放入内存条时，可稍微用力压下，直至金属条卡扣扣上&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/032.jpg&#34;
+	width=&#34;1024&#34;
+	height=&#34;768&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/032_hu44a357c137a18b24452e571b93e9d18b_251670_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/032_hu44a357c137a18b24452e571b93e9d18b_251670_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;032&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;在进行完上述操作后将电源排线插回&#34;&gt;&lt;strong&gt;在进行完上述操作后，将电源排线插回&lt;/strong&gt;&lt;/h3&gt;
+&lt;h4 id=&#34;1试装&#34;&gt;1.试装&lt;/h4&gt;
+&lt;p&gt;因为有的机型需要后盖才能正常开机，所以检测应当在装上后盖的情况下进行&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/024.jpg&#34;
+	width=&#34;3000&#34;
+	height=&#34;4000&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/024_hu35788334aaaa8536e7255f957611e551_1984394_480x0_resize_q75_box.jpg 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/024_hu35788334aaaa8536e7255f957611e551_1984394_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;024&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;听到卡扣合上的声音才算装好&lt;/p&gt;
+&lt;h4 id=&#34;2检测&#34;&gt;2.检测&lt;/h4&gt;
+&lt;p&gt;试装后盖后，开机，进入设备管理器（右键此电脑\显示更多选项\管理\单击设备管理器）&lt;/p&gt;
+&lt;p&gt;再进入任务管理器（ctrl+shift+esc\性能），观察各项指标有无变动&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CPU频率、显存大小、硬盘个数、磁盘大小、网络适配器、内存大小，以及是否能识别外设&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;CPU、GPU指标如图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/025.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1080&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/025_hu8a5462ecaad337ba2200d701555eb0fe_185526_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/025_hu8a5462ecaad337ba2200d701555eb0fe_185526_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;025&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;硬盘指标如图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/026.png&#34;
+	width=&#34;781&#34;
+	height=&#34;572&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/026_hu0f236ec2f1b110f531994f8c4410ee2e_48978_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/026_hu0f236ec2f1b110f531994f8c4410ee2e_48978_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;026&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;136&#34;
+		data-flex-basis=&#34;327px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;网络适配器指标如图&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/027.png&#34;
+	width=&#34;781&#34;
+	height=&#34;572&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/027_hu784b124a106797784ad47f0984f8aa92_57079_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/%E8%AE%A1%E7%BB%B4%E8%AE%A1%E5%88%92%E9%80%9A%E6%8B%86%E6%9C%BA%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B/027_hu784b124a106797784ad47f0984f8aa92_57079_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;027&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;136&#34;
+		data-flex-basis=&#34;327px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;若无异常，则关机并装上后盖螺丝&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;自此，装机完成&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+        </item>
+        <item>
+        <title>雷区机型一览(持续更新)</title>
+        <link>https://scau-jiwei.gitee.io/p/%E9%9B%B7%E5%8C%BA%E6%9C%BA%E5%9E%8B%E4%B8%80%E8%A7%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</link>
+        <pubDate>Wed, 21 Sep 2022 09:40:59 +0800</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/p/%E9%9B%B7%E5%8C%BA%E6%9C%BA%E5%9E%8B%E4%B8%80%E8%A7%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</guid>
+        <description>&lt;h3 id=&#34;劝退机型列表&#34;&gt;劝退机型列表&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;机型&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;雷区原因&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;华硕飞行堡垒&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;部分旧机型设计缺陷，极其容易短路&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;神舟全系列&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;别拆就对了&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;AppleMacBook&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;拆装极其困难&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;戴尔G系列&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;主板倒装.拆装困难&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;戴尔外星人系列&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;拆装困难,出问题赔不起&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;华硕ROG系列&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;拆装较困难,而且赔不起&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;谨慎处理机型列表&#34;&gt;谨慎处理机型列表&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;机型&lt;/th&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;雷区原因&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;惠普暗影精灵、光影精灵、微星gp76&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;拆机后需要连接电源才能开机&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;惠普部分机型&lt;/td&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;断电拆机后，开机会显示“cmos错误”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Office on 计算机维护队内部技术博客</title>
+        <link>https://scau-jiwei.gitee.io/categories/office/</link>
+        <description>Recent content in Office on 计算机维护队内部技术博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Sun, 13 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://scau-jiwei.gitee.io/categories/office/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Office Tool Plus 使用教程</title>
+        <link>https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Sun, 13 Nov 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</guid>
+        <description>&lt;h1 id=&#34;office-tool-plus-使用教程&#34;&gt;Office Tool Plus 使用教程&lt;/h1&gt;
+&lt;h3 id=&#34;目录&#34;&gt;目录&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;导言&lt;/li&gt;
+&lt;li&gt;Office Tool Plus 基本界面介绍&lt;/li&gt;
+&lt;li&gt;配置并安装 Office&lt;/li&gt;
+&lt;li&gt;许可证安装与产品激活&lt;/li&gt;
+&lt;li&gt;附录&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;导言&#34;&gt;&lt;strong&gt;导言&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;什么是 Office Tool Plus？&lt;/p&gt;
+&lt;p&gt;Office Tool Plus 是一款专业的 Office 官方镜像下载器，它不仅可以在线下载和安装 Office 产品，还集成了各种实用性工具帮助用户部署和管理 Office。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;一office-tool-plus-基本界面介绍&#34;&gt;一、Office Tool Plus 基本界面介绍&lt;/h2&gt;
+&lt;p&gt;简单对Office Tool Plus各个界面做一下介绍 &lt;del&gt;基本上是废话&lt;/del&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1主界面&#34;&gt;1.主界面&lt;/h3&gt;
+&lt;p&gt;打开Office Tool Plus，首先是主界面&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_001.png&#34;
+	width=&#34;1440&#34;
+	height=&#34;759&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_001_hu07b4b2f03847ebb94b9a0580f01291e4_1253173_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_001_hu07b4b2f03847ebb94b9a0580f01291e4_1253173_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;001&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;189&#34;
+		data-flex-basis=&#34;455px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;主要功能：&lt;/p&gt;
+&lt;p&gt;（1）新手教程&lt;/p&gt;
+&lt;p&gt;（2）网页版 Microsoft Office&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;暂时用不到&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2部署界面&#34;&gt;2.部署界面&lt;/h3&gt;
+&lt;p&gt;点击左侧的第二个图标，打开部署界面&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_002.png&#34;
+	width=&#34;1918&#34;
+	height=&#34;889&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_002_huc5f4ed7d5e1c8c2d24fbb1cb5e5308f5_867018_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_002_huc5f4ed7d5e1c8c2d24fbb1cb5e5308f5_867018_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;002&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;215&#34;
+		data-flex-basis=&#34;517px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;功能：&lt;/p&gt;
+&lt;p&gt;（1）查看当前电脑安装的 Office 产品&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_003.png&#34;
+	width=&#34;518&#34;
+	height=&#34;256&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_003_hu760b063a60c57dfb1e2b22a3c34aded7_63073_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_003_hu760b063a60c57dfb1e2b22a3c34aded7_63073_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;003&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;202&#34;
+		data-flex-basis=&#34;485px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;（2）通过多种方式安装 Office 产品，有多个版本可供安装&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_005.png&#34;
+	width=&#34;522&#34;
+	height=&#34;598&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_005_hueb96ef11236da7bab091d46ad49043fc_115118_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_005_hueb96ef11236da7bab091d46ad49043fc_115118_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;005&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;87&#34;
+		data-flex-basis=&#34;209px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3激活界面&#34;&gt;3.激活界面&lt;/h3&gt;
+&lt;p&gt;点击左侧的第三个图标，打开激活界面&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_004.png&#34;
+	width=&#34;1440&#34;
+	height=&#34;759&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_004_hu67c96b7f787ed8f9895a766545d67df8_1005962_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_004_hu67c96b7f787ed8f9895a766545d67df8_1005962_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;004&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;189&#34;
+		data-flex-basis=&#34;455px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;这些功能稍后会细讲&lt;/p&gt;
+&lt;p&gt;功能：&lt;/p&gt;
+&lt;p&gt;（1）产品许可证管理&lt;/p&gt;
+&lt;p&gt;（2）安装密钥&lt;/p&gt;
+&lt;p&gt;（3）KMS注册&lt;/p&gt;
+&lt;p&gt;（4）激活产品&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;4工具箱界面&#34;&gt;4.工具箱界面&lt;/h3&gt;
+&lt;p&gt;点击左侧的第四个图标，打开工具箱界面&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_006.png&#34;
+	width=&#34;1440&#34;
+	height=&#34;759&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_006_hu54d4cf792fc49177399339a3e8d35e8b_650843_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_006_hu54d4cf792fc49177399339a3e8d35e8b_650843_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;006&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;189&#34;
+		data-flex-basis=&#34;455px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;功能强大&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;务必谨慎使用！！！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;5文档转换界面&#34;&gt;5.文档转换界面&lt;/h3&gt;
+&lt;p&gt;点击左侧的第五个图标，打开文档转换界面&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_007.png&#34;
+	width=&#34;1440&#34;
+	height=&#34;759&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_007_hue955bbced1d80996280df95f84f2c0a2_962259_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_007_hue955bbced1d80996280df95f84f2c0a2_962259_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;007&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;189&#34;
+		data-flex-basis=&#34;455px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;功能强大&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;二配置并安装-office&#34;&gt;二、配置并安装 Office&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;重点！&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1移除原有的-office&#34;&gt;1.移除原有的 Office&lt;/h3&gt;
+&lt;p&gt;有的电脑在购买时会预装 Microsoft 365，但多数是试用版，而且产品功能受限。若想安装其余版本的产品，可能会彼此冲突，所以需要移除原有的 Office 产品。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不管先前有没有安装，先进行移除，方便后续安装和激活&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&#34;操作&#34;&gt;&lt;strong&gt;操作：&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;如下图，在工具箱界面中依次点击“移除 Office” “开始”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;等待，直至下方状态栏出现“移除 Office 结束”&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_008.png&#34;
+	width=&#34;1918&#34;
+	height=&#34;889&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_008_hud44482d986d9f308c5c332c5c629c597_932768_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_008_hud44482d986d9f308c5c332c5c629c597_932768_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;008&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;215&#34;
+		data-flex-basis=&#34;517px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;操作完成后，回到部署界面查看，若如下图所示，则已成功卸载 Ofiice 的所有产品&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_009.png&#34;
+	width=&#34;521&#34;
+	height=&#34;167&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_009_hud1f732842db611dc0bc643610277ccdf_38467_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_009_hud1f732842db611dc0bc643610277ccdf_38467_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;009&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;311&#34;
+		data-flex-basis=&#34;748px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2下载并安装-office-产品&#34;&gt;2.下载并安装 Office 产品&lt;/h3&gt;
+&lt;p&gt;下面以安装“ Office LTSC 专业增强版 2021 - 批量许可证”为例&lt;/p&gt;
+&lt;p&gt;原因：&lt;br&gt;
+专业增强版包含多种产品；2021的产品集成有最新的功能；批量许可证方便激活&lt;/p&gt;
+&lt;h3 id=&#34;操作-1&#34;&gt;&lt;strong&gt;操作：&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在 “产品”一栏中选择想要安装的office产品（带有“&lt;strong&gt;-批量许可证&lt;/strong&gt;”，否则后续激活将无法进行）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 “应用程序”一栏中选取想要安装的软件（按机主意见，默认三件套，公管经管可能需要 Access ）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 “语言”一栏中选取 “简体中文（中国）”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 “部署设置”一栏中选择对应的体系结构（普遍64位）；选择与产品版本相对应的通道（优选“当前通道”，如果不行则使用“年份+企业长期版）；“部署模式”选择“&lt;strong&gt;安装&lt;/strong&gt;”；勾选下方的“下载后再部署”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在下载设置中勾选“下载后校验 Office 安装文件”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击右上方“开始部署”&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_010.png&#34;
+	width=&#34;1918&#34;
+	height=&#34;889&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_010_huc793cace69b9a9daa84933b246e5d457_822071_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_010_huc793cace69b9a9daa84933b246e5d457_822071_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;010&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;215&#34;
+		data-flex-basis=&#34;517px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;程序会自动下载对应的 Office 产品并安装，下载过程耗时较久&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;下载、安装过程中会出现进度条不动的情况，请耐心等待&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_011.png&#34;
+	width=&#34;1918&#34;
+	height=&#34;889&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_011_hu477598c2e16ed21569e94fe7b6247031_757852_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_011_hu477598c2e16ed21569e94fe7b6247031_757852_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;011&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;215&#34;
+		data-flex-basis=&#34;517px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;如图所示，安装成功&lt;/p&gt;
+&lt;h3 id=&#34;拓展office-部分应用程序及其功能&#34;&gt;拓展：Office 部分应用程序及其功能&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Office 应用&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;功能&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;三件套&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;不赘述&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Access&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;数据管理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;OneNote&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;笔记&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;OneDrive&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;云盘&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3通过iso镜像文件安装-office&#34;&gt;3.通过ISO镜像文件安装 Office&lt;/h3&gt;
+&lt;p&gt;Office Tool Plus 可以将下载好的文件“打包”成一个ISO文件，在电脑上装载ISO文件即可安装 Office，不用再次下载。&lt;/p&gt;
+&lt;h3 id=&#34;操作-2&#34;&gt;&lt;strong&gt;操作：&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在 “产品”一栏中选择想要安装的office产品（带有“&lt;strong&gt;-批量许可证&lt;/strong&gt;”，否则后续激活将无法进行）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 “应用程序”一栏中勾选&lt;strong&gt;所有软件&lt;/strong&gt;（宁多勿少）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 “语言”一栏中选取 “简体中文（中国）”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在 “部署设置”一栏中选择对应的体系结构（普遍64位）；选择与产品版本相对应的通道（优选“当前通道”，如果不行则使用“年份+企业长期版）；“部署模式”选择“&lt;strong&gt;下载&lt;/strong&gt;”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在下载设置中勾选“下载后校验 Office 安装文件”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击右上方“开始部署”&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_012.png&#34;
+	width=&#34;899&#34;
+	height=&#34;879&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_012_hu397dfe3fa45ad7fb16d38de75f29372c_513634_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_012_hu397dfe3fa45ad7fb16d38de75f29372c_513634_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;012&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;102&#34;
+		data-flex-basis=&#34;245px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;等待下载完毕&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;下载完毕后，“部署模式”选择“创建ISO文件”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击右上方“开始部署”&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_013.png&#34;
+	width=&#34;349&#34;
+	height=&#34;489&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_013_hu4e0b700dcd538ac30aae8e15b5f263ae_53766_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_013_hu4e0b700dcd538ac30aae8e15b5f263ae_53766_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;013&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;71&#34;
+		data-flex-basis=&#34;171px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;选择创建ISO文件生成的位置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_014.png&#34;
+	width=&#34;945&#34;
+	height=&#34;473&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_014_hua2f33c594c87ab9d558cc07c276fa1fd_31120_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_014_hua2f33c594c87ab9d558cc07c276fa1fd_31120_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;014&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;199&#34;
+		data-flex-basis=&#34;479px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;生成的ISO文件可便携移动（放入U盘），不用再花时间下载&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;移除目标电脑原有的 Office&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将U盘插入要安装 Office 的电脑&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;找到ISO文件，右键装载（或者在打开方式中选择“Windows 资源管理器”）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;运行&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_015.png&#34;
+	width=&#34;1248&#34;
+	height=&#34;661&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_015_hu5f17f4a63f77b2c8055a31a4547f36f6_69473_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_015_hu5f17f4a63f77b2c8055a31a4547f36f6_69473_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;015&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;188&#34;
+		data-flex-basis=&#34;453px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;等待，在弹出的安装窗口中点击“否”&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_016.png&#34;
+	width=&#34;1441&#34;
+	height=&#34;644&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_016_huce1bb42207adb49f360ac1ff692df070_647363_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_016_huce1bb42207adb49f360ac1ff692df070_647363_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;016&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;223&#34;
+		data-flex-basis=&#34;537px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在“应用程序”一栏中选择欲安装的应用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;开始部署&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_017.png&#34;
+	width=&#34;1439&#34;
+	height=&#34;644&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_017_hu581c80dcc8cd01ed9b0b841ba72e3429_813551_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_017_hu581c80dcc8cd01ed9b0b841ba72e3429_813551_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;017&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;223&#34;
+		data-flex-basis=&#34;536px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;结束后记得卸载（即弹出ISO文件）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_018.png&#34;
+	width=&#34;363&#34;
+	height=&#34;324&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_018_hubc23b1d78e20a8646697deba4c901711_80663_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_018_hubc23b1d78e20a8646697deba4c901711_80663_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;018&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;112&#34;
+		data-flex-basis=&#34;268px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;至此，Office 的安装已完成&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;三许可证安装与产品激活&#34;&gt;三、许可证安装与产品激活&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;重重点！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;正版用户一般情况下不需要使用 Office Tool Plus 进行激活，登录账号/输入密钥即可激活 Office。但是都报任务了，机主要我们做什么，我想各位都很清楚。&lt;/p&gt;
+&lt;p&gt;激活开始前的注意事项：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;KMS 只能激活批量许可证&lt;br&gt;
+激活后，在 KMS 主机以及网络正常的情况下，系统会自动续期（变相的永久）&lt;br&gt;
+激活操作在联网情况下进行&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;对于KMS激活、正版与非正版的关系，不再赘述。可以参考 &lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.coolhub.top/archives/42&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;OTP作者的文章&lt;/a&gt;&lt;/strong&gt; 。&lt;/p&gt;
+&lt;h3 id=&#34;操作-3&#34;&gt;&lt;strong&gt;操作：&lt;/strong&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;转到“激活”界面&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;清除激活状态&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_019.png&#34;
+	width=&#34;1440&#34;
+	height=&#34;759&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_019_hubf1f89933b71e5c3a2863e2df977200f_1135518_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_019_hubf1f89933b71e5c3a2863e2df977200f_1135518_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;019&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;189&#34;
+		data-flex-basis=&#34;455px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在 “许可证”中一栏选择对应版本的office（带有批量许可证）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装许可证，待右侧状态栏出现“产品密钥安装成功”提示后，再进行下一步&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_020.png&#34;
+	width=&#34;1918&#34;
+	height=&#34;889&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_020_hu937606cb667f9a41389e3b49528fd6fc_912595_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_020_hu937606cb667f9a41389e3b49528fd6fc_912595_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;020&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;215&#34;
+		data-flex-basis=&#34;517px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在“KMS 管理”一栏填写相关信息&lt;br&gt;
+KMS 主机：(以下地址任选，一个不行就换另一个)&lt;br&gt;
+kms.loli.best&lt;br&gt;
+kms.loli.beer&lt;br&gt;
+kms.ghpym.com&lt;br&gt;
+KMS 端口：1688&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;保存设置，待右侧状态栏出现“成功应用设置”后，点击右上角的“激活”&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_021.png&#34;
+	width=&#34;1918&#34;
+	height=&#34;889&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_021_huc5f4ed7d5e1c8c2d24fbb1cb5e5308f5_890555_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_021_huc5f4ed7d5e1c8c2d24fbb1cb5e5308f5_890555_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;021&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;215&#34;
+		data-flex-basis=&#34;517px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;激活成功后会出现“产品激活成功”提示&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_022.png&#34;
+	width=&#34;1918&#34;
+	height=&#34;889&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_022_huc5f4ed7d5e1c8c2d24fbb1cb5e5308f5_879802_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_022_huc5f4ed7d5e1c8c2d24fbb1cb5e5308f5_879802_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;022&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;215&#34;
+		data-flex-basis=&#34;517px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;点击 Windows 徽标，打开任意一个安装的 Office 产品&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;等待，在“接受许可协议”界面点击“接受/是”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;后续弹窗按照机主意愿进行选择（默认接受）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击产品左下角“账户”，可以看到产品的激活信息&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_023.png&#34;
+	width=&#34;422&#34;
+	height=&#34;478&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_023_hu0d45c9f74dfc6a7998d59fe38e9e4896_22954_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/2_023_hu0d45c9f74dfc6a7998d59fe38e9e4896_22954_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;023&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;88&#34;
+		data-flex-basis=&#34;211px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;可以登录微软账户正常使用&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;至此，Office 的激活已完成&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;四附录&#34;&gt;四、附录&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.coolhub.top/archives/13&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;1、OTP作者的文章&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;想要了解更多OTP的操作，或者对此博客有疑虑，可以查看OTP作者写的文章。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2、提示&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;与使用其他程序类似，在OTP的使用过程中，可能会出现卡顿（下载安装除外）、操作失败，或者人为操作不当等状况。&lt;/p&gt;
+&lt;p&gt;这时候，请退出程序（若不能直接关闭，可在“任务管理器”中结束进程），再次打开，重新执行上一步操作&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;如有错误请多多指正&#34;&gt;如有错误，请多多指正。&lt;/h3&gt;
+</description>
+        </item>
+        <item>
+        <title>OA系统通用解决方案</title>
+        <link>https://scau-jiwei.gitee.io/p/oa%E7%B3%BB%E7%BB%9F%E9%80%9A%E7%94%A8%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+        <pubDate>Mon, 19 Sep 2022 21:03:50 +0800</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/p/oa%E7%B3%BB%E7%BB%9F%E9%80%9A%E7%94%A8%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+        <description>&lt;h3 id=&#34;关于oa系统的通用解决方案&#34;&gt;关于OA系统的通用解决方案&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;安装Flash控件。&lt;/li&gt;
+&lt;li&gt;华农OA系统登录页面“辅助程序安装”，点击后按步骤安装好控件。(一般情况下已经安装好了)（需要管理员权限）&lt;/li&gt;
+&lt;li&gt;将浏览器对OA系统网址的浏览模式改为兼容模式（更改内核）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;注：Edge浏览器不适配学校的OA系统。&lt;/em&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在系统内无法查看WPS类文档正文的解决方法：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;浏览器Internet选项&amp;ndash;&amp;gt;安全&amp;ndash;&amp;gt;自定义级别&amp;ndash;&amp;gt;把ActiveX控件有关的选项全部启用。
+浏览器Internet选项&amp;ndash;&amp;gt;安全&amp;ndash;&amp;gt;受信任的站点&amp;ndash;&amp;gt;站点&amp;ndash;&amp;gt;取消勾选“对该区域中所有站点都要求服务器验证”，然后将OA系统的网址添加进受信任网址列表。
+关闭所有浏览器，之后重新打开浏览器进入OA系统。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;注：若前几步失效，重新安装Office。原本安装的是WPS则重装WPS，其他情况建议重装Microsoft Office 2007或2010。&lt;/em&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

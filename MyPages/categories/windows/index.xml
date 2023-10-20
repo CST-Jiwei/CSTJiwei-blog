@@ -1,0 +1,1356 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Windows on 计算机维护队内部技术博客</title>
+        <link>https://scau-jiwei.gitee.io/categories/windows/</link>
+        <description>Recent content in Windows on 计算机维护队内部技术博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language><atom:link href="https://scau-jiwei.gitee.io/categories/windows/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Windows系统的封装测试</title>
+        <link>https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/</guid>
+        <description>&lt;h1 id=&#34;windows系统的封装测试&#34;&gt;Windows系统的封装测试&lt;/h1&gt;
+&lt;h2 id=&#34;目录&#34;&gt;&lt;strong&gt;目录&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%af%bc%e8%a8%80&#34; &gt; 导言 &lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%87%86%e5%a4%87%e5%b7%a5%e4%bd%9c&#34; &gt; 准备工作 &lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#%e4%b8%80%e4%bd%bf%e7%94%a8ntlite%e9%a2%84%e5%ae%9a%e5%88%b6%e6%af%8d%e7%9b%98&#34; &gt; 使用NTLite预定制母盘 &lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#%e4%ba%8c%e9%80%9a%e8%bf%87vmware%e5%ae%9a%e5%88%b6%e7%b3%bb%e7%bb%9f&#34; &gt; 通过VMware定制系统 &lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#%e4%b8%89%e5%b0%81%e8%a3%85%e7%b3%bb%e7%bb%9f&#34; &gt; 封装系统&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;#%e5%9b%9b%e6%b5%8b%e8%af%95&#34; &gt; 测试&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;导言&#34;&gt;&lt;strong&gt;导言&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;在执行任务的过程中，我们常常会遇到重装系统（或者在一块全新硬盘上安装windows系统）的任务。&lt;/p&gt;
+&lt;p&gt;在安装完系统后，还需要对系统进行一些设置，安装一些软件，才能获得极佳的体验。&lt;/p&gt;
+&lt;p&gt;那么，有没有一种方法，可以“制作”一个安装后无需设置，并且已安装必要软件的系统，从而达到节约操作时间的目的呢？&lt;/p&gt;
+&lt;p&gt;这就不得不提到“封装系统”了。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如果说，安装系统是将镜像文件释放出来，那么，封装系统就是将特定的系统压缩成镜像文件。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;如何将一个已经完成基础设置、安装了必要的社交和办公软件的Windows系统封装起来，并对封装之后的镜像进行测试，是这篇博客将讨论的问题。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;准备工作&#34;&gt;&lt;strong&gt;准备工作&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;1软件安装&#34;&gt;1.软件安装：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;NTLite（镜像定制软件）：https://www.ntlite.com/download/&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3001.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1041&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3001_hu475e752bea8d5885e0864b8a8fa433f4_358058_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3001_hu475e752bea8d5885e0864b8a8fa433f4_358058_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;下载NTLite&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;184&#34;
+		data-flex-basis=&#34;442px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VMware（虚拟机）：https://customerconnect.vmware.com/en/downloads/info/slug/desktop_end_user_computing/vmware_workstation_player/17_0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3002.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1041&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3002_hue77247b247fff66d6a2208a07e693fdc_119921_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3002_hue77247b247fff66d6a2208a07e693fdc_119921_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;下载VMWare&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;184&#34;
+		data-flex-basis=&#34;442px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;以上软件使用免费版本即可，无需注册或激活&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2文件准备&#34;&gt;2.文件准备：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Windows原版镜像（MSDN i tell you）：https://next.itellyou.cn/&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Windows原版镜像（MSDN - 山己几子木）：https://msdn.sjjzm.com/ （以上二选一）&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3003.png&#34;
+	width=&#34;1346&#34;
+	height=&#34;656&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3003_hu3556e02e4db2e11a953cff5921d0108d_72032_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3003_hu3556e02e4db2e11a953cff5921d0108d_72032_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;下载原版系统镜像&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;205&#34;
+		data-flex-basis=&#34;492px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Easy Sysprep（封装软件）：https://www.puresys.net/1222.html&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3004.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1041&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3004_hu9d7b8ff39e16a47689ce789db452af44_1744351_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3004_hu9d7b8ff39e16a47689ce789db452af44_1744351_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;下载Easy Sysprep&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;184&#34;
+		data-flex-basis=&#34;442px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CCleaner（垃圾清理软件）：https://www.ccleaner.com/zh-cn/download&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3025.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1041&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3025_hu7f125150bde7bae9eaffc2b63e9b8a64_122249_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3025_hu7f125150bde7bae9eaffc2b63e9b8a64_122249_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;下载CCleaner&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;184&#34;
+		data-flex-basis=&#34;442px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Geek（程序卸载软件）：https://geekuninstaller.com/download&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3055.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1041&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3055_hu0bce329940acc677fc42fdba9bc492d9_130592_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3055_hu0bce329940acc677fc42fdba9bc492d9_130592_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;下载Geek&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;184&#34;
+		data-flex-basis=&#34;442px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;FirPE（PE）：https://firpe.cn/page-247&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3005.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1041&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3005_hue9c96a4cacb43fae9ce052ef79157f0d_132333_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3005_hue9c96a4cacb43fae9ce052ef79157f0d_132333_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;下载FirPE&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;184&#34;
+		data-flex-basis=&#34;442px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3006.png&#34;
+	width=&#34;520&#34;
+	height=&#34;300&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3006_hu1248fca5ce0676786ea1c135ad18b397_30972_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3006_hu1248fca5ce0676786ea1c135ad18b397_30972_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;生成PE镜像&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;173&#34;
+		data-flex-basis=&#34;416px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;一使用ntlite预定制母盘&#34;&gt;&lt;strong&gt;一、使用NTLite预定制母盘&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;由于一些设置无法在系统中进行，这时候就需要用到NTLite对母盘进行预定制。&lt;/p&gt;
+&lt;h3 id=&#34;1挂载镜像&#34;&gt;1.挂载镜像&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;解压下载好的原版系统镜像（以zh-cn_windows_11_consumer_editions_version_22h2_updated_jan_2023_x64_dvd_0b2e8f08为例）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3007.png&#34;
+	width=&#34;1346&#34;
+	height=&#34;656&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3007_hu2b11863d6cb749de13f3c11c7847fb71_117232_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3007_hu2b11863d6cb749de13f3c11c7847fb71_117232_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;解压镜像&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;205&#34;
+		data-flex-basis=&#34;492px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;找到位于&lt;strong&gt;根目录\sources&lt;/strong&gt;的install.wim文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3008.png&#34;
+	width=&#34;1346&#34;
+	height=&#34;656&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3008_hu2353470f25b66b12e4d867971671d533_96623_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3008_hu2353470f25b66b12e4d867971671d533_96623_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;install.wim位置&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;205&#34;
+		data-flex-basis=&#34;492px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将其转移到&lt;strong&gt;全英路径&lt;/strong&gt;的文件夹中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3009.png&#34;
+	width=&#34;1346&#34;
+	height=&#34;656&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3009_hub39108e6f4baee75e4e0c878787c7da5_66945_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3009_hub39108e6f4baee75e4e0c878787c7da5_66945_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;转移&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;205&#34;
+		data-flex-basis=&#34;492px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用NTLite挂载（&lt;strong&gt;先退出杀毒软件，否则会影响效率！！！&lt;/strong&gt;）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3010.png&#34;
+	width=&#34;1440&#34;
+	height=&#34;759&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3010_huadb279d85e26fcd7bf446a9022a301e5_51617_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3010_huadb279d85e26fcd7bf446a9022a301e5_51617_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;挂载1&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;189&#34;
+		data-flex-basis=&#34;455px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;选择刚刚转移出来的install.wim文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;双击要挂载的版本（以专业版为例），待其加载完毕&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3011.png&#34;
+	width=&#34;1440&#34;
+	height=&#34;759&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3011_hu3fd5849064e270306b5022b449d48dd8_90631_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3011_hu3fd5849064e270306b5022b449d48dd8_90631_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;挂载2&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;189&#34;
+		data-flex-basis=&#34;455px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2定制母盘&#34;&gt;2.定制母盘&lt;/h3&gt;
+&lt;p&gt;侧边栏的各项内容是可以对母盘进行的操作&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3012.png&#34;
+	width=&#34;153&#34;
+	height=&#34;457&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3012_hu7f2689f6b9153d595b9e35b591ff7c4c_10624_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3012_hu7f2689f6b9153d595b9e35b591ff7c4c_10624_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;侧边栏&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;33&#34;
+		data-flex-basis=&#34;80px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;需要操作的只有“更新整合”“驱动程序”“无人值守”以及“应用”，其余最好不要修改&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;更新整合&lt;/strong&gt;——在这里可以下载并安装系统补丁或者运行库&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3013.png&#34;
+	width=&#34;1440&#34;
+	height=&#34;759&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3013_hu180de3510ff9b1ebd5ae8bccd9c4a39e_116567_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3013_hu180de3510ff9b1ebd5ae8bccd9c4a39e_116567_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;更新&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;189&#34;
+		data-flex-basis=&#34;455px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;打开后会自动选择最优的补丁（运行库）搭配&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;经测试，由于Windows系统具有“传递优化”功能，所以在软件中的下载速度不如安装后系统更新的速度，建议勾选体量小的更新（或者跳过这一步）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;点击“加入队列”，就可以在队列中看到添加的更新&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3014.png&#34;
+	width=&#34;1420&#34;
+	height=&#34;626&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3014_huf55bff9f4c6b48f0abccabbe831dc45a_67998_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3014_huf55bff9f4c6b48f0abccabbe831dc45a_67998_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;更新&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;226&#34;
+		data-flex-basis=&#34;544px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;驱动程序&lt;/strong&gt;——可以将本地驱动安装到母盘中（获取驱动的方法我会单独出一篇博客）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3015.png&#34;
+	width=&#34;1440&#34;
+	height=&#34;759&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3015_hu8a11da57b2d236588e6f1b07df142bae_98594_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3015_hu8a11da57b2d236588e6f1b07df142bae_98594_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;添加驱动&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;189&#34;
+		data-flex-basis=&#34;455px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;添加驱动，如NVIDIA显示适配器驱动、通用串行总线控制器、通用串行总线设备（原版Windows7系统没有集成USB驱动）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3016.png&#34;
+	width=&#34;946&#34;
+	height=&#34;533&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3016_hu319644c4d1b982f2d486ccd730eccdad_47553_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3016_hu319644c4d1b982f2d486ccd730eccdad_47553_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;导入驱动&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;425px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;可以在队列中看到添加的驱动程序&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;无人值守&lt;/strong&gt;——可以对安装系统时的一些设置进行操作（比如跳过网络设置）&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;双击更改项后面灰色的点，更改条件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3017.png&#34;
+	width=&#34;1440&#34;
+	height=&#34;753&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3017_huc300703bff2e487403a563d74ac51a21_88139_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3017_huc300703bff2e487403a563d74ac51a21_88139_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;无人值守&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;191&#34;
+		data-flex-basis=&#34;458px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;应用&lt;/strong&gt;——对镜像进行最后的修改并保存&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如图设置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3018.png&#34;
+	width=&#34;1440&#34;
+	height=&#34;753&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3018_hu735bd57e0e7284cd95850b28e597f278_91793_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3018_hu735bd57e0e7284cd95850b28e597f278_91793_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;应用&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;191&#34;
+		data-flex-basis=&#34;458px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;右侧列表为操作清单，确认无误后点击左上角“开始”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;应用开始后不得中途退出，操作中断得到的镜像应删除，请勿使用！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;至此，预定制完毕&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;二通过vmware定制系统&#34;&gt;&lt;strong&gt;二、通过VMware定制系统&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;在使用虚拟机时，光标无法移出虚拟机，可按Ctrl+Alt切换为系统光标&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在预定制母盘之后，就可对系统进行详细设置了，比如激活系统、安装驱动、安装软件&lt;/p&gt;
+&lt;h3 id=&#34;1配置vhd虚拟磁盘&#34;&gt;1.配置VHD虚拟磁盘&lt;/h3&gt;
+&lt;p&gt;VHD虚拟磁盘在虚拟机中充当本地硬盘&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;右键Windows徽标，打开“磁盘管理”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3019.png&#34;
+	width=&#34;239&#34;
+	height=&#34;562&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3019_hud8d05a739f9c113639e17112ea86941b_105708_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3019_hud8d05a739f9c113639e17112ea86941b_105708_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;磁盘管理&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;42&#34;
+		data-flex-basis=&#34;102px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;随意点击一个磁盘，在上方工具栏选择&lt;strong&gt;操作——创建VHD&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3020.png&#34;
+	width=&#34;754&#34;
+	height=&#34;597&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3020_hu6c7569b670ad8d64dc1703237562aa39_52278_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3020_hu6c7569b670ad8d64dc1703237562aa39_52278_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;创建VHD_1&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;126&#34;
+		data-flex-basis=&#34;303px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如图设置VHD，所在磁盘至少要有20G空闲空间，VHD大小为20G（要放母盘、软件以及一些工具与文件，封装得到的镜像也放在这里）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3021.png&#34;
+	width=&#34;443&#34;
+	height=&#34;604&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3021_hue72c8ddc9d0fae1319770ab3e3223188_36917_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3021_hue72c8ddc9d0fae1319770ab3e3223188_36917_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;创建VHD_2&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;73&#34;
+		data-flex-basis=&#34;176px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;创建完成后，磁盘会显示未初始化，右键，点击初始化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3022.png&#34;
+	width=&#34;751&#34;
+	height=&#34;651&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3022_huaca5ea7cdab2fea2310d75074319f256_50003_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3022_huaca5ea7cdab2fea2310d75074319f256_50003_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;创建VHD_3&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;115&#34;
+		data-flex-basis=&#34;276px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;磁盘分区形式选择&lt;strong&gt;MBR&lt;/strong&gt;，点击确定&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3023.png&#34;
+	width=&#34;468&#34;
+	height=&#34;393&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3023_hu1afcbe74ecf385bbf6126254b25d216d_19599_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3023_hu1afcbe74ecf385bbf6126254b25d216d_19599_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;创建VHD_4&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;119&#34;
+		data-flex-basis=&#34;285px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;右键新建简单卷，一直点“下一页”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3024.png&#34;
+	width=&#34;754&#34;
+	height=&#34;597&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3024_huf3bb33d04ea402087751d949e80820f6_57040_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3024_huf3bb33d04ea402087751d949e80820f6_57040_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;创建VHD_5&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;126&#34;
+		data-flex-basis=&#34;303px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;可在资源管理器中看到刚刚创建的VHD虚拟磁盘&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;将定制好的镜像、Easy Sysprep、CCleaner、Geek、激活工具以及想要安装的软件或文件放进去&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3026.png&#34;
+	width=&#34;1346&#34;
+	height=&#34;656&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3026_hu664b35de9419ad12d7b49556d4814fef_83446_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3026_hu664b35de9419ad12d7b49556d4814fef_83446_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;镜像、软件、文件&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;205&#34;
+		data-flex-basis=&#34;492px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;返回“磁盘管理”，右键分离VHD&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3027.png&#34;
+	width=&#34;754&#34;
+	height=&#34;597&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3027_huf2c4c5941df58ffd3b842600f20413ec_53883_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3027_huf2c4c5941df58ffd3b842600f20413ec_53883_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;分离VHD&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;126&#34;
+		data-flex-basis=&#34;303px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2配置虚拟机&#34;&gt;2.配置虚拟机&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;新建虚拟机——自定义&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3028.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1041&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3028_hu1fb77dadd82d5ce3121e99fcdee72f6c_112056_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3028_hu1fb77dadd82d5ce3121e99fcdee72f6c_112056_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;新建虚拟机&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;184&#34;
+		data-flex-basis=&#34;442px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;兼容性界面选择“下一步”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;在安装操作系统界面选择生成的FirPE镜像文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3029.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1048&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3029_hu0117f4f1883638257293ac31a000ecbb_164229_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3029_hu0117f4f1883638257293ac31a000ecbb_164229_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;安装PE&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;183&#34;
+		data-flex-basis=&#34;439px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;默认下一步，在命名界面选择纯英路径，&lt;strong&gt;注意空间大小&lt;/strong&gt;（不建议放C盘）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3030.png&#34;
+	width=&#34;499&#34;
+	height=&#34;433&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3030_huacefa4df76fdfe4b2e77f29312bd4508_13183_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3030_huacefa4df76fdfe4b2e77f29312bd4508_13183_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;命名与位置&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;115&#34;
+		data-flex-basis=&#34;276px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;固件类型选择BIOS&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3031.png&#34;
+	width=&#34;499&#34;
+	height=&#34;433&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3031_hu431a6bb3aa5a55a735a5d2c4c2699d6a_11264_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3031_hu431a6bb3aa5a55a735a5d2c4c2699d6a_11264_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;固件类型&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;115&#34;
+		data-flex-basis=&#34;276px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;处理器内核不得超过宿主机&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3032.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1048&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3032_hudd2d3b1a15f5594fb43dc1ee815dcf3d_164362_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3032_hudd2d3b1a15f5594fb43dc1ee815dcf3d_164362_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;处理器配置&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;183&#34;
+		data-flex-basis=&#34;439px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;内存大小为宿主机的一半&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3033.png&#34;
+	width=&#34;499&#34;
+	height=&#34;433&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3033_hu9682b51ec9d5f56126a54cd2d7c4aabd_18334_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3033_hu9682b51ec9d5f56126a54cd2d7c4aabd_18334_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;内存配置&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;115&#34;
+		data-flex-basis=&#34;276px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;网络类型默认，I/O控制器默认，磁盘类型默认&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;选择磁盘界面选择创建新的硬盘&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如图配置，大小为50G，单文件储存&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3034.png&#34;
+	width=&#34;499&#34;
+	height=&#34;433&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3034_hu6f89eb9b3598626513f4f6e1bfd70b27_21133_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3034_hu6f89eb9b3598626513f4f6e1bfd70b27_21133_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;磁盘配置&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;115&#34;
+		data-flex-basis=&#34;276px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;指定磁盘文件默认，下一页选择自定义硬件，移除声卡、打印机、USB控制器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3035.png&#34;
+	width=&#34;731&#34;
+	height=&#34;779&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3035_hu22fa05ef6c7b0c08532f125db76c85cf_37334_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3035_hu22fa05ef6c7b0c08532f125db76c85cf_37334_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;自定义硬件&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;93&#34;
+		data-flex-basis=&#34;225px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;虚拟机创建后点击左上角“编辑虚拟机设置”，添加硬盘&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3036.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1048&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3036_hu661f0698c01276b74128aec851cfa646_133451_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3036_hu661f0698c01276b74128aec851cfa646_133451_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;添加硬盘&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;183&#34;
+		data-flex-basis=&#34;439px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;选择“使用现有磁盘”——浏览——文件类型选择“所有文件”&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;选择先前创建的VHD文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3037.png&#34;
+	width=&#34;518&#34;
+	height=&#34;420&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3037_hudfc610d086ace18bdadec05b899abaa2_17455_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3037_hudfc610d086ace18bdadec05b899abaa2_17455_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;现有磁盘&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;123&#34;
+		data-flex-basis=&#34;296px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3038.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1048&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3038_hu199257035e0bdb10307add8f78f88ef0_170758_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3038_hu199257035e0bdb10307add8f78f88ef0_170758_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;添加VHD&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;183&#34;
+		data-flex-basis=&#34;439px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;保持现有格式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;3安装系统&#34;&gt;3.安装系统&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;开启虚拟机，进入的是PE系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3039.png&#34;
+	width=&#34;1036&#34;
+	height=&#34;784&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3039_hu1a834933cc958185aa7e9c4ad753d70d_213575_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3039_hu1a834933cc958185aa7e9c4ad753d70d_213575_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;PE&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;132&#34;
+		data-flex-basis=&#34;317px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用DiskGenius给50G的磁盘新建分区&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3040.png&#34;
+	width=&#34;1049&#34;
+	height=&#34;791&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3040_hu4b37e0cea70798a849b67425861fe73a_224731_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3040_hu4b37e0cea70798a849b67425861fe73a_224731_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;DG&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;132&#34;
+		data-flex-basis=&#34;318px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3041.png&#34;
+	width=&#34;1047&#34;
+	height=&#34;785&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3041_hucbcffd7aa3cef88c481c0af03f2b0063_130653_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3041_hucbcffd7aa3cef88c481c0af03f2b0063_130653_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;DG&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;WinNTSetup在开始菜单&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3042.png&#34;
+	width=&#34;1058&#34;
+	height=&#34;788&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3042_hu3b0047d926dcf498c271fdcd7ffe9381_210782_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3042_hu3b0047d926dcf498c271fdcd7ffe9381_210782_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;WinNTSetup&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;134&#34;
+		data-flex-basis=&#34;322px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;安装系统，由于是分区表类型为MBR，引导驱动器和安装驱动器位置应相同&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3043.png&#34;
+	width=&#34;674&#34;
+	height=&#34;550&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3043_hu8e330ed4294cd078ccb6b366dccaa293_57694_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3043_hu8e330ed4294cd078ccb6b366dccaa293_57694_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;安装系统&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;122&#34;
+		data-flex-basis=&#34;294px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;安装完成后关机&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;如果出现这种情况，点击确认，并重新开启虚拟机&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3044.png&#34;
+	width=&#34;412&#34;
+	height=&#34;156&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3044_hu1e1340b9a3e55e4e07908b0c7d1a3c9e_11221_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3044_hu1e1340b9a3e55e4e07908b0c7d1a3c9e_11221_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;突发情况&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;264&#34;
+		data-flex-basis=&#34;633px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;如果没有自动进入系统，请按图操作，不要开启虚拟机，而是先进入固件（BIOS）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3045.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1048&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3045_hucee57c9d449846627914b953028e7fdc_99214_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3045_hucee57c9d449846627914b953028e7fdc_99214_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;BIOS&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;183&#34;
+		data-flex-basis=&#34;439px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;确保“Hard Drive”在“CD-ROM Drive”之前&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3046.png&#34;
+	width=&#34;689&#34;
+	height=&#34;510&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3046_huaf5c60766807f20637cfac8ed920fa6a_15415_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3046_huaf5c60766807f20637cfac8ed920fa6a_15415_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;更改启动项顺序&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;135&#34;
+		data-flex-basis=&#34;324px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;保存退出后进入系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;4设置系统与安装软件&#34;&gt;4.设置系统与安装软件&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;显示此界面时，&lt;strong&gt;请按Ctrl+Shift+F3&lt;/strong&gt;，系统会重启，然后进入审查模式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3047.png&#34;
+	width=&#34;1055&#34;
+	height=&#34;798&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3047_hu409467e4be1fd8027c283bc168537e78_159932_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3047_hu409467e4be1fd8027c283bc168537e78_159932_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;进入审查模式&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;132&#34;
+		data-flex-basis=&#34;317px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;如果发现有文件遗漏，没有放进VHD里，可以关闭虚拟机，在资源管理器中双击VHD，放入文件后弹出&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3048.png&#34;
+	width=&#34;1346&#34;
+	height=&#34;656&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3048_huc10e5befb4a0538fe9e235d2813a9427_86990_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3048_huc10e5befb4a0538fe9e235d2813a9427_86990_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;VHD&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;205&#34;
+		data-flex-basis=&#34;492px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;关闭此窗口&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3049.png&#34;
+	width=&#34;322&#34;
+	height=&#34;272&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3049_huc988e40bf6bd1adf1742bd41d5a57196_44893_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3049_huc988e40bf6bd1adf1742bd41d5a57196_44893_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;关闭&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;118&#34;
+		data-flex-basis=&#34;284px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;激活系统&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3050.png&#34;
+	width=&#34;525&#34;
+	height=&#34;333&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3050_hu7dadb82c9512506e95330c5ef9ef6459_61865_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3050_hu7dadb82c9512506e95330c5ef9ef6459_61865_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;安装数字密钥&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;157&#34;
+		data-flex-basis=&#34;378px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3051.png&#34;
+	width=&#34;537&#34;
+	height=&#34;337&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3051_hu7329f3eec0d726fdd6be8c349e3d0ba2_83719_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3051_hu7329f3eec0d726fdd6be8c349e3d0ba2_83719_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;数字激活&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;159&#34;
+		data-flex-basis=&#34;382px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;安装软件，如QQ、微信、锐捷、Office（&lt;strong&gt;&lt;a class=&#34;link&#34; href=&#34;https://scau-jiwei.gitee.io/p/office-tool-plus-%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;如何安装Office&lt;/a&gt;&lt;/strong&gt;）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3052.png&#34;
+	width=&#34;199&#34;
+	height=&#34;473&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3052_hue485ef43d369e9b426547e02a6d31616_37111_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3052_hue485ef43d369e9b426547e02a6d31616_37111_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;安装软件&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;42&#34;
+		data-flex-basis=&#34;100px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一些设置，如显示文件拓展名、显示桌面图标、更改桌面背景、更改浏览器主页样式&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3053.png&#34;
+	width=&#34;1470&#34;
+	height=&#34;835&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3053_hucde4fa1495d5473ca8792a4d04be222c_293881_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3053_hucde4fa1495d5473ca8792a4d04be222c_293881_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;一些设置&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;422px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在所有操作完成后，彻底删除所有外来文件，并安装CCleaner&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;按1、2、3、1、2的顺序进行操作&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3054.png&#34;
+	width=&#34;779&#34;
+	height=&#34;540&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3054_hu93f60823aee437cabffbdd86eba72fb6_82471_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3054_hu93f60823aee437cabffbdd86eba72fb6_82471_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;CCleaner&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;144&#34;
+		data-flex-basis=&#34;346px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;垃圾清理完成后，在Geek中右键卸载CCleaner&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;再彻底删除Geek&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;至此，定制完毕&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;三封装系统&#34;&gt;&lt;strong&gt;三、封装系统&lt;/strong&gt;&lt;/h2&gt;
+&lt;h3 id=&#34;1系统内封装先&#34;&gt;1.系统内封装（先）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;运行Easy Sysprep&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3056.png&#34;
+	width=&#34;967&#34;
+	height=&#34;658&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3056_hu9ebb1904623f6bfdd35b96ce82ec2c7e_115501_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3056_hu9ebb1904623f6bfdd35b96ce82ec2c7e_115501_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Easy Sysprep&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;146&#34;
+		data-flex-basis=&#34;352px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;点击设置&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;右侧全打勾，点击封装&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3057.png&#34;
+	width=&#34;721&#34;
+	height=&#34;419&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3057_hu1e7a8b3a68f6ae9f81cdffb64b6fbd13_40173_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3057_hu1e7a8b3a68f6ae9f81cdffb64b6fbd13_40173_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Easy Sysprep设置&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;172&#34;
+		data-flex-basis=&#34;412px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;选择完成后关机&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3058.png&#34;
+	width=&#34;585&#34;
+	height=&#34;369&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3058_hub2b79be53c145a38fed6fee31fea5980_84262_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3058_hub2b79be53c145a38fed6fee31fea5980_84262_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;开启第一次封装&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;158&#34;
+		data-flex-basis=&#34;380px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;封装系统时不要对系统进行任何操作！！！&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;2pe内封装后&#34;&gt;2.PE内封装（后）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;在打开虚拟机时，进入固件（BIOS）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3045.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1048&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3045_hucee57c9d449846627914b953028e7fdc_99214_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3045_hucee57c9d449846627914b953028e7fdc_99214_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;BIOS&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;183&#34;
+		data-flex-basis=&#34;439px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;确保“CD-ROM Drive”在“Hard Drive”之前&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;保存退出后开启虚拟机，进入PE&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;运行Easy Sysprep，如图设置&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3059.png&#34;
+	width=&#34;914&#34;
+	height=&#34;571&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3059_hua0d6502ba0ec4510bdb1bd67cef8ae9e_60949_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3059_hua0d6502ba0ec4510bdb1bd67cef8ae9e_60949_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;OEM&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;160&#34;
+		data-flex-basis=&#34;384px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3060.png&#34;
+	width=&#34;912&#34;
+	height=&#34;570&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3060_huf935914df750a5cb7bf3791d3b9801c6_127273_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3060_huf935914df750a5cb7bf3791d3b9801c6_127273_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;部署&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;160&#34;
+		data-flex-basis=&#34;384px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3061.png&#34;
+	width=&#34;914&#34;
+	height=&#34;573&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3061_hu122292b181a87974848924440921ddc3_152610_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3061_hu122292b181a87974848924440921ddc3_152610_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;系统&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;159&#34;
+		data-flex-basis=&#34;382px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3062.png&#34;
+	width=&#34;908&#34;
+	height=&#34;573&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3062_hubd74d6442ab7c19ebba58d392f8eda46_62179_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3062_hubd74d6442ab7c19ebba58d392f8eda46_62179_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;用户&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;158&#34;
+		data-flex-basis=&#34;380px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;保存位置选择非系统盘&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3063.png&#34;
+	width=&#34;912&#34;
+	height=&#34;571&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3063_hu09006461dc4369c54ff79ab27bbc58ed_102339_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3063_hu09006461dc4369c54ff79ab27bbc58ed_102339_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;保存位置&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;159&#34;
+		data-flex-basis=&#34;383px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;选择完成后退出&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3064.png&#34;
+	width=&#34;527&#34;
+	height=&#34;210&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3064_hu5897baa6afa7d806399185da6441d80c_59083_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3064_hu5897baa6afa7d806399185da6441d80c_59083_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;完成&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;250&#34;
+		data-flex-basis=&#34;602px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;至此，封装完毕&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;四测试&#34;&gt;&lt;strong&gt;四、测试&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;使用WinNTSetup安装封装后的系统&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;格式化C盘，如图设置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3065.png&#34;
+	width=&#34;810&#34;
+	height=&#34;663&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3065_hu157368c6e6b9de2fa8d4f8cd61a02a10_167405_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3065_hu157368c6e6b9de2fa8d4f8cd61a02a10_167405_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;安装&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;122&#34;
+		data-flex-basis=&#34;293px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;安装版本可能会显示win10，不用理会&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装完成后&lt;strong&gt;关机，不要重启，进入固件&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3045.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1048&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3045_hucee57c9d449846627914b953028e7fdc_99214_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3045_hucee57c9d449846627914b953028e7fdc_99214_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;BIOS&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;183&#34;
+		data-flex-basis=&#34;439px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;确保“Hard Drive”在“CD-ROM Drive”之前&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;退出BIOS后，进入系统&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果显示如图，则说明正在安装系统&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3066.png&#34;
+	width=&#34;1458&#34;
+	height=&#34;835&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3066_hu581a78a5c222dc01b45baa6f34c7c2a5_173411_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3066_hu581a78a5c222dc01b45baa6f34c7c2a5_173411_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;安装界面&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;174&#34;
+		data-flex-basis=&#34;419px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;安装期间会重启多次，请留意虚拟机状态&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3068.png&#34;
+	width=&#34;1920&#34;
+	height=&#34;1048&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3068_hu5152e7e3813ab156f381bbfa2b87c4b6_328155_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3068_hu5152e7e3813ab156f381bbfa2b87c4b6_328155_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;大功告成！&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;183&#34;
+		data-flex-basis=&#34;439px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;大功告成！！！&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;P.S.这里让机主填&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3067.png&#34;
+	width=&#34;1469&#34;
+	height=&#34;826&#34;
+	srcset=&#34;https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3067_huc648c46a704c566dba0d38f28808a6e3_141787_480x0_resize_box_3.png 480w, https://scau-jiwei.gitee.io/p/windows%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%B0%81%E8%A3%85%E6%B5%8B%E8%AF%95/3067_huc648c46a704c566dba0d38f28808a6e3_141787_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;机主&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;此博客具有时效性如有错误请多多指正&#34;&gt;此博客具有时效性，如有错误，请多多指正。&lt;/h3&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

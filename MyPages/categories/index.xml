@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on 计算机维护队内部技术博客</title>
+        <link>https://scau-jiwei.gitee.io/categories/</link>
+        <description>Recent content in Categories on 计算机维护队内部技术博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Wed, 16 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://scau-jiwei.gitee.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>软件</title>
+        <link>https://scau-jiwei.gitee.io/categories/%E8%BD%AF%E4%BB%B6/</link>
+        <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/categories/%E8%BD%AF%E4%BB%B6/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>网络</title>
+        <link>https://scau-jiwei.gitee.io/categories/%E7%BD%91%E7%BB%9C/</link>
+        <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/categories/%E7%BD%91%E7%BB%9C/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Office</title>
+        <link>https://scau-jiwei.gitee.io/categories/office/</link>
+        <pubDate>Sun, 13 Nov 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/categories/office/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>IPv6</title>
+        <link>https://scau-jiwei.gitee.io/categories/ipv6/</link>
+        <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/categories/ipv6/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>计维手册预备役</title>
+        <link>https://scau-jiwei.gitee.io/categories/%E8%AE%A1%E7%BB%B4%E6%89%8B%E5%86%8C%E9%A2%84%E5%A4%87%E5%BD%B9/</link>
+        <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/categories/%E8%AE%A1%E7%BB%B4%E6%89%8B%E5%86%8C%E9%A2%84%E5%A4%87%E5%BD%B9/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>路由器</title>
+        <link>https://scau-jiwei.gitee.io/categories/%E8%B7%AF%E7%94%B1%E5%99%A8/</link>
+        <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/categories/%E8%B7%AF%E7%94%B1%E5%99%A8/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>台式机</title>
+        <link>https://scau-jiwei.gitee.io/categories/%E5%8F%B0%E5%BC%8F%E6%9C%BA/</link>
+        <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/categories/%E5%8F%B0%E5%BC%8F%E6%9C%BA/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>校园网</title>
+        <link>https://scau-jiwei.gitee.io/categories/%E6%A0%A1%E5%9B%AD%E7%BD%91/</link>
+        <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/categories/%E6%A0%A1%E5%9B%AD%E7%BD%91/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>硬件</title>
+        <link>https://scau-jiwei.gitee.io/categories/%E7%A1%AC%E4%BB%B6/</link>
+        <pubDate>Sun, 30 Oct 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/categories/%E7%A1%AC%E4%BB%B6/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>拆机</title>
+        <link>https://scau-jiwei.gitee.io/categories/%E6%8B%86%E6%9C%BA/</link>
+        <pubDate>Tue, 25 Oct 2022 20:39:01 +0800</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/categories/%E6%8B%86%E6%9C%BA/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>OA系统</title>
+        <link>https://scau-jiwei.gitee.io/categories/oa%E7%B3%BB%E7%BB%9F/</link>
+        <pubDate>Mon, 19 Sep 2022 21:03:50 +0800</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/categories/oa%E7%B3%BB%E7%BB%9F/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Windows</title>
+        <link>https://scau-jiwei.gitee.io/categories/windows/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://scau-jiwei.gitee.io/categories/windows/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
